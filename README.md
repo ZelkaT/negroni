@@ -5,27 +5,23 @@ A captive portal that displays a beautiful Negroni cocktail poster when users co
 ## Features
 
 - Creates an open WiFi access point (no password required)
-- Automatically redirects users to the Negroni poster page
-- Works with Android, iOS, and desktop captive portal detection
-- Beautiful responsive design
+- Automatically redirects users to the negroni poster page
 
 ## Hardware Required
 
 - ESP32 development board
 - USB cable for programming
 
-## Software Setup
-
 ### Prerequisites
 
 - PlatformIO (already installed)
-- USB drivers for your ESP32 board (usually CH340 or CP2102)
+- USB drivers for your ESP32 board
 
 ### Installation Steps
 
 1. **Open the project in PlatformIO:**
    - Open VS Code or your PlatformIO IDE
-   - File → Open Folder → Select the `esp32-captive-portal` folder
+   - File → Open Folder → Select the `negroni` folder
 
 2. **Connect your ESP32:**
    - Connect your ESP32 to your computer via USB
@@ -45,7 +41,7 @@ A captive portal that displays a beautiful Negroni cocktail poster when users co
 1. **Power on the ESP32** (either via USB or external power)
 
 2. **Connect to WiFi:**
-   - Look for WiFi network: `Negroni Portal`
+   - Look for WiFi network: `Negroni`
    - Connect to it (no password required)
 
 3. **View the page:**
@@ -59,7 +55,7 @@ A captive portal that displays a beautiful Negroni cocktail poster when users co
 
 Edit `src/main.cpp`, line 9:
 ```cpp
-const char* ssid = "Negroni Portal";  // Change this to your desired name
+const char* ssid = "Negroni";  // Change this to your desired name
 ```
 
 ### Change HTML Content
